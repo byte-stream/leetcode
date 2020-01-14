@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -20,9 +21,10 @@ public class TwoSum {
         int[] test = {2 ,7 ,9, 11};
         int target = 9;
         int[] result = solute(test, target);
-        for (int i = 0; i < result.length; i++){
-            System.out.println(result[i]);
-        }
+//        for (int i = 0; i < result.length; i++){
+//           System.out.println(result[i]);
+//        }
+        Arrays.stream(result).forEach(System.out::println);
     }
 
     private static int[] solute(int[] nums, int target) {
